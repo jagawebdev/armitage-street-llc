@@ -23,5 +23,5 @@ var app = angular.module("armitageTemplate", ["ngRoute"])
                     {
                         templateUrl: "templates/contact-us.html"
                     })
-                    .otherwise({redirectTo: "/landing"});
+                    .otherwise({redirectTo: "/about-us"});
 }]);

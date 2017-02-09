@@ -1,0 +1,43 @@
+@import "assets/normalize.scss";
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    font-size: 16px;
+    background: url("../img/tile.jpg") repeat;
+}
+
+#greeting {
+    position: absolute;
+    top: 20%;
+    transform: tanslateY(-100%);
+    left: 0;
+    width: 100%;
+}
+
+.big {
+    font-size: 24px;
+    margin: 40px auto;
+}
+
+.info {
+    font-size: 18px;
+}
+
+.ion-android-call, .ion-email {
+    font-size: 24px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.small {
+    font-size: 14px;
+    margin: 60px auto;
+    font-weight: 300;
+}
