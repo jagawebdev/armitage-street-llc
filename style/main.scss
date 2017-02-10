@@ -1,4 +1,6 @@
 @import "assets/normalize.scss";
+@import "assets/_colors.scss";
+@import "assets/_navbar.scss";
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -6,17 +8,27 @@
   box-sizing: border-box;
 }
 
+/* GLOBAL ============================================== */
+
 body {
     width: 100%;
     min-height: 100%;
-    font-size: 16px;
     background: url("../img/tile.jpg") repeat;
 }
 
-#greeting {
-    position: absolute;
-    top: 20%;
-    transform: tanslateY(-100%);
-    left: 0;
-    width: 100%;
+.container {
+    background-color: white;
 }
+a {
+    color: black;
+    &:hover {
+        color: black;
+        cursor: pointer;
+    }
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+

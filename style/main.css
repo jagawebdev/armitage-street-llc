@@ -364,22 +364,86 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+/* HEADER ============================================== */
+header {
+  background-color: #FFF;
+  min-width: 300px;
+  padding: 40px 0 40px 0; }
+  header .logo {
+    display: inline-block;
+    margin: 0 0 40px 8px; }
+    header .logo img {
+      max-width: 250px; }
+  header ul {
+    padding-left: 66px; }
+  header li {
+    line-height: 3rem; }
+
+/* NAVIGATION SECTION ================================= */
+.hamburger {
+  display: none;
+  font-size: 40px;
+  float: right;
+  z-index: 300; }
+
+.hamburger:hover {
+  cursor: pointer; }
+
+.drop-menu {
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 74px;
+  z-index: 200;
+  background-color: white;
+  border-top: solid 3px black; }
+  .drop-menu ul {
+    padding: 5px 0; }
+  .drop-menu li {
+    padding: 3px; }
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    width: 100%; }
+
+  .navigation .navigation-list {
+    display: none; }
+
+  .hamburger {
+    display: inline-block;
+    z-index: 300; }
+
+  header {
+    padding: 10px 0 10px 0; }
+    header .logo {
+      margin: 0 0 0 0; }
+      header .logo img {
+        max-width: 90px; } }
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* GLOBAL ============================================== */
 body {
   width: 100%;
   min-height: 100%;
-  font-size: 16px;
   background: url("../img/tile.jpg") repeat; }
 
-#greeting {
-  position: absolute;
-  top: 20%;
-  transform: tanslateY(-100%);
-  left: 0;
-  width: 100%; }
+.container {
+  background-color: white; }
+
+a {
+  color: black; }
+  a:hover {
+    color: black;
+    cursor: pointer; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
 
 /*# sourceMappingURL=main.css.map */

@@ -28,40 +28,41 @@
 
 	<!--custom css-->
 	<link rel="stylesheet" type="text/css" href="style/main.css">
-
 </head>
 
-<body>
+<body class="container">
 	<!-- HEADER ====================================== -->
-	<header>
-        <navbar class="navigation container">
-                <a href="#/landing"><div class="logo">Lorem</div></a>
-
-                <div class="navigation-list">
-                    <ul>
-                        <li><a href="#/about-us"></a></li>
-                        <li><a href="#/wedding">Wedding</a></li>
-                        <li><a href="#/destination">Resort</a></li>
-                        <li><a href="#/contact">Contact</a></li>
-                        <li><a href="#/faq">Faq</a></li>
-                    </ul>
-                </div>
-
-                <a href="">
-                    <div class="hamburger ion-android-menu">
-                        <div class="drop-menu">
-                            <ul class="drop-ul">
-                                <li><a href="#/landing" class="drop-link">Home</a></li>
-                                <li><a href="#/wedding" class="drop-link">Wedding</a></li>
-                                <li><a href="#/destination" class="drop-link">Resort</a></li>
-                                <li><a href="#/contact" class="drop-link">Contact</a></li>
-                                <li><a href="#/faq" class="drop-link">Faq</a></li>
-                            </ul>
-                        </div>
-                   </div>
-               </a>
-        </navbar>
-    </header>
+	<div class="row">
+		<header class="col-sm-3">
+	        <navbar class="navigation">
+	                <a href="#/about-us"><div class="logo"><img src="img/logo-sm.png"/></div></a>
+	
+	                <div class="navigation-list">
+	                    <ul>
+	                        <li><a href="#/about-us">About Us</a></li>
+	                        <li><a href="#/loan-originaton">Loan Origination</a></li>
+	                        <li><a href="#/note-purchases">Note Purchases</a></li>
+	                        <li><a href="#/lender-services">Lender Services</a></li>
+	                        <li><a href="#/contact-us">Contact Us</a></li>
+	                    </ul>
+	                </div>
+	
+	                <a href="">
+	                    <div class="hamburger ion-android-menu ">
+	                        <div class="drop-menu text-center">
+	                            <ul class="drop-ul">
+	                                <li><a href="#/About Us" class="drop-link">About Us</a></li>
+	                                <li><a href="#/Loan Origination" class="drop-link">Loan Origination</a></li>
+	                                <li><a href="#/Note Purchases" class="drop-link">Note Purchases</a></li>
+	                                <li><a href="#/Lender Services" class="drop-link">Lender Services</a></li>
+	                                <li><a href="#/Contact Us" class="drop-link">Contact Us</a></li>
+	                            </ul>
+	                        </div>
+	                   </div>
+	               </a>
+	        </navbar>
+	    </header>
+	 </div>
 
 	<!-- ANGULAR-- DISPLAYS DIFFERENT TEMPLATES ACCORDINGLY =============== -->
 	<div ng-view autoscroll="true"></div>

@@ -1,0 +1,80 @@
+@import "_colors.scss";
+
+/* HEADER ============================================== */
+header {
+    background-color: #FFF;
+    min-width: 300px;
+    padding: 40px 0 40px 0;
+    .logo {
+        display: inline-block;
+        margin: 0 0 40px 8px;
+        img {
+            max-width: 250px;
+        }
+    }
+    
+    ul {
+        padding-left: 66px;
+    }
+    
+    li {
+        line-height: 3rem;
+    }
+}
+
+/* NAVIGATION SECTION ================================= */
+.hamburger {
+  display: none;
+  font-size: 40px;
+  float: right;
+  z-index: 300;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.drop-menu {
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 74px;
+  z-index: 200;
+  background-color: white;
+  border-top: solid 3px black;
+   ul {
+        padding: 5px 0;
+    }
+    
+    li {
+        padding: 3px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    width: 100%;
+  }
+  .navigation .navigation-list {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+    z-index: 300;
+  }
+  
+  header {
+      padding: 10px 0 10px 0;
+    .logo {
+        margin: 0 0 0 0;
+        img {
+            max-width: 90px;
+        }
+    }
+}
+}
