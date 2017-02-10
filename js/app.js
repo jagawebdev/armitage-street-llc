@@ -7,9 +7,9 @@ var app = angular.module("armitageTemplate", ["ngRoute"])
                     {
                         templateUrl: "templates/about-us.html"
                     })
-                    .when("/loan-orgination",
+                    .when("/loan-origination",
                     {
-                        templateUrl: "templates/loan-orgination.html"
+                        templateUrl: "templates/loan-origination.html"
                     })
                     .when("/note-purchases",
                     {

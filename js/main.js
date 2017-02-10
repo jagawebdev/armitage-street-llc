@@ -1,10 +1,4 @@
 /*global $*/
-/* PRELOADER */
-$(window).ready(function() {
-    $('#loading').hide();
-});
-
-
 $(document).ready(function() {
    /**
    * Drop Down Menu

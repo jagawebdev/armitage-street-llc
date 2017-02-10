@@ -32,40 +32,40 @@
 
 <body class="container">
 	<!-- HEADER ====================================== -->
-	<div class="row">
-		<header class="col-sm-3">
+		<header>
 	        <navbar class="navigation">
 	                <a href="#/about-us"><div class="logo"><img src="img/logo-sm.png"/></div></a>
 	
 	                <div class="navigation-list">
 	                    <ul>
-	                        <li><a href="#/about-us">About Us</a></li>
-	                        <li><a href="#/loan-originaton">Loan Origination</a></li>
-	                        <li><a href="#/note-purchases">Note Purchases</a></li>
-	                        <li><a href="#/lender-services">Lender Services</a></li>
-	                        <li><a href="#/contact-us">Contact Us</a></li>
+	                        <li><a href="#/about-us"><span class="ion-arrow-right-b"></span>About Us</a></li>
+	                        <li><span class="ion-arrow-right-b"></span><a href="#/loan-origination">Loan Origination</a></li>
+	                        <li><span class="ion-arrow-right-b"></span><a href="#/note-purchases">Note Purchases</a></li>
+	                        <li><span class="ion-arrow-right-b"></span><a href="#/lender-services">Lender Services</a></li>
+	                        <li><span class="ion-arrow-right-b"></span><a href="#/contact-us">Contact Us</a></li>
 	                    </ul>
-	                </div>
+	                </div><!-- .navigation-link-->
 	
 	                <a href="">
 	                    <div class="hamburger ion-android-menu ">
 	                        <div class="drop-menu text-center">
 	                            <ul class="drop-ul">
-	                                <li><a href="#/About Us" class="drop-link">About Us</a></li>
-	                                <li><a href="#/Loan Origination" class="drop-link">Loan Origination</a></li>
-	                                <li><a href="#/Note Purchases" class="drop-link">Note Purchases</a></li>
-	                                <li><a href="#/Lender Services" class="drop-link">Lender Services</a></li>
-	                                <li><a href="#/Contact Us" class="drop-link">Contact Us</a></li>
-	                            </ul>
-	                        </div>
-	                   </div>
-	               </a>
-	        </navbar>
+	                                <li><a href="#/about-us" class="drop-link">About Us</a></li>
+	                                <li><a href="#/loan-origination" class="drop-link">Loan Origination</a></li>
+	                                <li><a href="#/note-purchases" class="drop-link">Note Purchases</a></li>
+	                                <li><a href="#/lender-services" class="drop-link">Lender Services</a></li>
+	                                <li><a href="#/contact-us" class="drop-link">Contact Us</a></li>
+	                            </ul><!-- .drop-ul-->
+	                        </div><!-- .drop-menu-->
+	                   </div><!-- .hamburger-->
+	               </a><!-- drop down menu link-->
+	        </navbar><!-- .navigation-->
 	    </header>
-	 </div>
-
-	<!-- ANGULAR-- DISPLAYS DIFFERENT TEMPLATES ACCORDINGLY =============== -->
-	<div ng-view autoscroll="true"></div>
+	    
+	    <section id="templates-body">
+	    	<!-- ANGULAR-- DISPLAYS DIFFERENT TEMPLATES ACCORDINGLY =============== -->
+			<div ng-view autoscroll="true"></div>
+	    </section>
 
 	<!-- FOOTER ====================================== -->
 	<footer>

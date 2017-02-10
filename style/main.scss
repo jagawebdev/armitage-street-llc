@@ -2,28 +2,38 @@
 @import "assets/_colors.scss";
 @import "assets/_navbar.scss";
 
+/* GLOBAL ============================================== */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* GLOBAL ============================================== */
-
 body {
     width: 100%;
     min-height: 100%;
     background: url("../img/tile.jpg") repeat;
+    margin-top: 20px;
 }
 
-.container {
-    background-color: white;
+b, strong {
+  -webkit-font-smoothing: antialiased;
 }
+
 a {
     color: black;
+    text-decoration: none;
     &:hover {
         color: black;
         cursor: pointer;
+        text-decoration: none;
+    }
+    &:visited {
+        color: black;
+        text-decoration: none;
+    }
+    &:link {
+        text-decoration:none;
     }
 }
 
@@ -32,3 +42,21 @@ ul {
     padding-left: 0;
 }
 
+.container {
+    padding: 0;
+}
+
+#templates-body {
+    background-color: #FFF;
+    padding: 235px 60px 60px 360px;
+}
+
+@media screen and (max-width: 768px) {
+    #templates-body {
+        padding: 100px 15px 60px;
+    }
+    
+    body {
+        margin-top: 0;
+    }
+}
