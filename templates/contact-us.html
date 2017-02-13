@@ -1,36 +1,47 @@
-<div class="hero">
+<div class="hero hero-contact">
     <h1 class="page-title">Contact Us</h1>
-    <img src="img/hero-bg-3.jpg"/>
 </div>
 
-<div>
-    <div class="row">
-        <div class="col-sm-6">
-        <strong>Lorem ipsum dolor sit </strong>amet, consectetuer adipiscing 
-elit. Aenean commodo ligula eget dolor. Aenean massa.
-Cum sociis natoque penatibus et magnis dis parturient
-montes, nascetur ridiculus mus. Donec quam felis, 
-ultricies nec, pellentesque eu, pretium quis, sem. 
-Nulla consequat massa quis enim. Donec pede justo, 
-fringilla vel, aliquet nec, <br/><br/>vulputate eget, arcu.
-In enim justo, rhoncus ut, imperdiet a, venenatis 
-vitae, justo. Nullam dictum felis eu pede mollis 
-pretium. Integer tincidunt. Cras dapibus. Vivamus 
-elementum semper nisi. Aenean vulputate eleifend tellus. 
+<div class="two-columns column-r-padding column-l-padding">
+P: 312.899.6373 <br/> info@armitagest.com
+</div>
 
-       </div>
-        <div class="col-sm-6">
-
-<strong>Lorem ipsum dolor sit </strong>amet, consectetuer adipiscing 
-elit. Aenean commodo ligula eget dolor. Aenean massa.
-Cum sociis natoque penatibus et magnis dis parturient
-montes, nascetur ridiculus mus. <br/><br/> Donec quam felis, 
-ultricies nec, pellentesque eu, pretium quis, sem. 
-Nulla consequat massa quis enim. Donec pede justo, 
-fringilla vel, aliquet nec, vulputate eget, arcu.
-In enim justo, rhoncus ut, imperdiet a, venenatis 
-vitae, justo. Nullam dictum felis eu pede mollis 
-pretium. Integer tincidunt. Cras dapibus. Vivamus 
-elementum semper nisi. Aenean vulputate eleifend tellus. 
+<div class="two-columns column-r-padding">
+    <p>Send Us a Message</p> 
+    <div id ="contactform">
+        <form class="form-horizontal contact-form" role="form">
+    		<div class="form-group">
+    			<div id="cname-group">
+                    <label>Your Name</label>                            
+    				<input type="text" name="inputName" id="inputName" class="form-control required">
+    			</div>
+    			<div id="cemail-group">
+                    <label>Your Email</label>                            
+    				<input type="email" name="inputEmail" id="inputEmail" class="form-control required email">
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<div id="cphone-group">
+                    <label>Your Phone Number</label>
+    				<input type="phone" name="inputPhone" id="inputPhone" class="form-control number" pattern="[\-\(\)\s0-9]{8,15}" title="Please enter a valid phone number.">
+    			</div>
+    			<div>
+                    <label>Subject</label>
+    				<input type="text" name="inputSubject" id="inputSubject" class="form-control required">
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<div>
+    				<textarea name="inputMessage" id="inputMessage" rows="6" class="form-control required"></textarea>
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<div>
+    				<button type="submit">Submit</button>
+    			</div>
+    		</div>
+    	</form>
     </div>
 </div>
+<div class="clearfix"></div>
+

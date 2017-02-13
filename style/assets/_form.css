@@ -1,0 +1,54 @@
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0; }
+
+.form-group textarea, .form-group input {
+  background-color: transparent; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="phone"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666;
+  border: solid 1px gray;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important; }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="phone"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  border: solid 1px gray; }
+
+.form-control {
+  border: gray 1px solid;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important; }
+
+.form-control:focus {
+  border: solid 1px gray; }
+
+/*# sourceMappingURL=_form.css.map */

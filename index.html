@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 
 	<!--GOOGLE FONTS-->
-	<link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+	<!--s<link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">-->
 
 	<!--ICONS-->
 	<link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -15,10 +15,10 @@
 	<link rel="shortcut icon" href="img/logo-only-house.png">
 
 	<!--BOOTSTRAP CORE CSS-->
-	<link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-	crossorigin="anonymous">
+	<!--<link rel="stylesheet"-->
+ <!--       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+ <!--       integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"-->
+	<!--crossorigin="anonymous">-->
 
 	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -38,11 +38,11 @@
 	
 	                <div class="navigation-list">
 	                    <ul>
-	                        <li><a href="#/about-us">About Us</a></li>
-	                        <li><a href="#/loan-origination">Loan Origination</a></li>
-	                        <li><a href="#/note-purchases">Note Purchases</a></li>
-	                        <li><a href="#/lender-services">Lender Services</a></li>
-	                        <li><a href="#/contact-us">Contact Us</a></li>
+	                        <a href="#/about-us"><li>About Us</li></a>
+	                        <a href="#/loan-origination"><li>Loan Origination</li></a>
+	                        <a href="#/note-purchases"><li>Note Purchases</li></a>
+	                        <a href="#/lender-services"><li>Lender Services</li></a>
+	                        <a href="#/contact-us"><li>Contact Us</li></a></li>
 	                    </ul>
 	                </div><!-- .navigation-link-->
 	
@@ -50,11 +50,11 @@
 	                    <div class="hamburger ion-android-menu ">
 	                        <div class="drop-menu text-center">
 	                            <ul class="drop-ul">
-	                                <li><a href="#/about-us" class="drop-link">About Us</a></li>
-	                                <li><a href="#/loan-origination" class="drop-link">Loan Origination</a></li>
-	                                <li><a href="#/note-purchases" class="drop-link">Note Purchases</a></li>
-	                                <li><a href="#/lender-services" class="drop-link">Lender Services</a></li>
-	                                <li><a href="#/contact-us" class="drop-link">Contact Us</a></li>
+	                                <a href="#/about-us" class="drop-link"><li>About Us</li></a>
+	                                <a href="#/loan-origination" class="drop-link"><li>Loan Origination</li></a>
+	                                <a href="#/note-purchases" class="drop-link"><li>Note Purchases</li></a>
+	                                <a href="#/lender-services" class="drop-link"><li>Lender Services</li></a>
+	                                <a href="#/contact-us" class="drop-link"><li>Contact Us</li></a>
 	                            </ul><!-- .drop-ul-->
 	                        </div><!-- .drop-menu-->
 	                   </div><!-- .hamburger-->
@@ -65,21 +65,19 @@
 	    <section id="templates-body">
 	    	<!-- ANGULAR-- DISPLAYS DIFFERENT TEMPLATES ACCORDINGLY =============== -->
 			<div ng-view autoscroll="true"></div>
-			
-			
 	    </section>
-
-	<!-- FOOTER ====================================== -->
-	<footer>
-	    <p>&#xA9; Armitage Street LLC 2017. All Rights Reserved.</p>
-	</footer>
+	    
+	    <!-- FOOTER ====================================== -->
+			<footer>
+			    <p><a href="#/contact-us">Contact Us</a> <span>|</span>&#xA9; Armitage Street LLC 2017. All Rights Reserved.</p>
+			</footer>
 
 	<!-- THIRD PARTY JS-->
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-	integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"-->
+	<!--integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>-->
 
 	<!-- application scripts -->
 	<script src="js/main.js" type="text/javascript"></script>

@@ -1,6 +1,7 @@
 @import "assets/normalize.scss";
 @import "assets/_colors.scss";
 @import "assets/_navbar.scss";
+@import "assets/_form.scss";
 
 /* GLOBAL ============================================== */
 *, *:after, *:before {
@@ -13,7 +14,8 @@ body {
     width: 100%;
     min-height: 100%;
     background: url("../img/tile.jpg") repeat;
-    margin-top: 20px;
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 16px;
 }
 
 b, strong {
@@ -46,6 +48,25 @@ img {
 
 .container {
     padding: 0;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.two-columns {
+    width: 50%;
+    float: left;
+}
+
+.column-r-padding {
+    padding-right: 30px;
+}
+
+.column-l-padding {
+    padding-left: 30px;
+}
+
+.clearfix {
+    clear: both;
 }
 
 #templates-body {
@@ -57,20 +78,34 @@ img {
 .hero {
     position: relative;
     margin-bottom: 20px;
+    height: 193px;
+    background-size: cover;
 }
 
-footer {
-    background-color: white;
-    text-align: center;
-    font-size: 12px;
-    color: rgba(0,0,0,0.7);
-    padding: 20px 0;
+.hero-about {
+    background: url("../img/hero-bg-1.jpg") no-repeat center;
+}
+
+.hero-loan {
+    background: url("../img/hero-bg-2.jpg") no-repeat center;
+}
+
+.hero-lender {
+    background: url("../img/hero-bg-4.jpg") no-repeat center;
+}
+
+.hero-note {
+    background: url("../img/hero-bg-5.jpg") no-repeat center;
+}
+
+.hero-contact {
+    background: url("../img/hero-bg-3.jpg") no-repeat center;
 }
 
 .page-title {
     position: absolute;
     text-align: center;
-    font-family: "Times New Roman", Georgia, Serif;
+    //font-family: "Times New Roman", Georgia, Serif;
     letter-spacing: .2rem;
     font-weight: bold;
     font-size: 36px;
@@ -83,6 +118,30 @@ footer {
     width: 100%;
 }
 
+footer {
+    background-color: white;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(0,0,0,0.7);
+    padding: 20px 0;
+    span {
+        padding: 0 20px;
+    }
+    
+    a {
+        color: $green !important;
+        &:hover {
+            color: $dark-green;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        &:visited {
+            color: $green;
+            text-decoration: none;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     #templates-body {
         padding: 100px 15px 60px;
@@ -90,5 +149,17 @@ footer {
     
     body {
         margin-top: 0;
+    }
+    
+    .two-columns {
+        width: 100%;
+    }
+    
+    .hero {
+        height: 100px;
+    }
+    
+    .column-l-padding, .column-r-padding {
+        padding-left: 0;
     }
 }
