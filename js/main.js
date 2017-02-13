@@ -11,13 +11,7 @@ $(document).ready(function() {
     $(document).click( function(){
         $('.drop-menu').hide();
     });
-
-    /**
-    * Fancybox
-    */
-    $(".fancybox").fancybox();
 });
-
 
 /**
 * Window scroll effects
