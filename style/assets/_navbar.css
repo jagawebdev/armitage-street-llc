@@ -5,10 +5,11 @@ header {
   padding: 35px 15px 35px 35px;
   float: left;
   display: inline-block;
-  z-index: 10000; }
+  z-index: 10000;
+  text-transform: uppercase; }
   header .logo {
     display: inline-block;
-    margin: 0 0 35px 0; }
+    margin: 0 0 16px 0; }
     header .logo img {
       max-width: 200px; }
   header ul {
@@ -16,7 +17,7 @@ header {
     background-color: #869995; }
   header li {
     padding-left: 47px;
-    line-height: 3rem; }
+    line-height: 2rem; }
     header li:hover {
       background-color: #7a8c88; }
   header a {

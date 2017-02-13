@@ -374,7 +374,7 @@ header {
   z-index: 10000; }
   header .logo {
     display: inline-block;
-    margin: 0 0 35px 0; }
+    margin: 0 0 16px 0; }
     header .logo img {
       max-width: 200px; }
   header ul {
@@ -382,7 +382,7 @@ header {
     background-color: #869995; }
   header li {
     padding-left: 47px;
-    line-height: 3rem; }
+    line-height: 2rem; }
     header li:hover {
       background-color: #7a8c88; }
   header a {
@@ -440,11 +440,33 @@ header {
   .hamburger {
     display: inline-block;
     z-index: 300; } }
+.contact-form h3 {
+  margin: 0 0 15px 0; }
+
+button {
+  position: relative;
+  border: solid 1px #7a8c88;
+  padding: 5px 10px 3px 10px;
+  background-color: #869995;
+  overflow: hidden;
+  color: white;
+  margin-bottom: 3px; }
+
+button:hover {
+  color: #869995;
+  background-color: transparent; }
+
+button:focus {
+  outline: 0; }
+
 label {
   display: block;
   font-size: 14px;
   font-weight: 300;
   margin: 0; }
+
+.form-group {
+  margin-bottom: 10px; }
 
 .form-group textarea, .form-group input {
   background-color: transparent; }
@@ -463,7 +485,7 @@ textarea {
   border-radius: 0px;
   display: block;
   width: 100%;
-  padding: 6px 12px;
+  padding: 2px 6px;
   outline: none;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
@@ -504,7 +526,8 @@ body {
   min-height: 100%;
   background: url("../img/tile.jpg") repeat;
   font-family: "Times New Roman", Georgia, Serif;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.3rem; }
 
 b, strong {
   -webkit-font-smoothing: antialiased; }
@@ -553,7 +576,7 @@ img {
 .hero {
   position: relative;
   margin-bottom: 20px;
-  height: 193px;
+  height: 202px;
   background-size: cover; }
 
 .hero-about {
@@ -578,7 +601,7 @@ img {
   font-weight: bold;
   font-size: 36px;
   width: 100%;
-  color: white;
+  color: #fff;
   margin: 0;
   top: 50%;
   transform: translateY(-50%);

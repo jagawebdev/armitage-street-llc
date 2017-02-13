@@ -1,8 +1,36 @@
+.contact-form {
+    h3 {
+        margin: 0 0 15px 0;
+    }
+}
+
+button {
+  position: relative;
+  border: solid 1px $dark-green;
+  padding: 5px 10px 3px 10px;
+  background-color: $green;
+  overflow: hidden;
+  color: white;
+  margin-bottom: 3px;
+}
+button:hover {
+  color: $green;
+  background-color: transparent;
+}
+
+button:focus {
+  outline: 0;
+}
+
 label {
   display: block;
   font-size: 14px;
   font-weight: 300;
   margin: 0;
+}
+
+.form-group {
+    margin-bottom: 10px;
 }
 
 .form-group textarea, .form-group input {
@@ -23,7 +51,7 @@ textarea {
   border-radius: 0px;
   display: block;
   width: 100%;
-  padding: 6px 12px;
+  padding: 2px 6px;
   outline: none;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;

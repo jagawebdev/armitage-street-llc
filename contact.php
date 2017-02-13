@@ -1,5 +1,5 @@
 <?php
-$send_to = '{assigned_user_email}';
+$send_to = 'jagawebdev@gmail.com';
 
 $errors         = array();  	// array to hold validation errors 
 $data 			= array(); 		// array to pass back data

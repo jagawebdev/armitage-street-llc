@@ -1,54 +1,72 @@
-label {
-  display: block;
-  font-size: 14px;
-  font-weight: 300;
-  margin: 0; }
+/*
+Error: Undefined variable: "$dark-green".
+        on line 9 of /home/ubuntu/workspace/style/assets/_form.scss
 
-.form-group textarea, .form-group input {
-  background-color: transparent; }
+4:     }
+5: }
+6: 
+7: button {
+8:   position: relative;
+9:   border: solid 1px $dark-green;
+10:   padding: 5px 10px 3px 10px;
+11:   background-color: $green;
+12:   overflow: hidden;
+13:   color: white;
+14:   margin-bottom: 3px;
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="phone"],
-input[type="password"],
-input[type="search"],
-textarea {
-  color: #666;
-  border: solid 1px gray;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  display: block;
-  width: 100%;
-  padding: 6px 12px;
-  outline: none;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important; }
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="phone"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-  border: solid 1px gray; }
-
-.form-control {
-  border: gray 1px solid;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  outline: none;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important; }
-
-.form-control:focus {
-  border: solid 1px gray; }
-
-/*# sourceMappingURL=_form.css.map */
+Backtrace:
+/home/ubuntu/workspace/style/assets/_form.scss:9
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `map'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `_perform'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/mnt/shared/sbin/scss:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$dark-green\".\A         on line 9 of /home/ubuntu/workspace/style/assets/_form.scss\A \A 4:     }\A 5: }\A 6: \A 7: button {\A 8:   position: relative;\A 9:   border: solid 1px $dark-green;\A 10:   padding: 5px 10px 3px 10px;\A 11:   background-color: $green;\A 12:   overflow: hidden;\A 13:   color: white;\A 14:   margin-bottom: 3px;"; }
