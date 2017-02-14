@@ -5,8 +5,7 @@ header {
   padding: 35px 15px 35px 35px;
   float: left;
   display: inline-block;
-  z-index: 10000;
-  text-transform: uppercase; }
+  z-index: 10000; }
   header .logo {
     display: inline-block;
     margin: 0 0 16px 0; }
@@ -14,7 +13,8 @@ header {
       max-width: 200px; }
   header ul {
     padding: 21px 0 21px 0;
-    background-color: #869995; }
+    background-color: #869995;
+    list-style: none; }
   header li {
     padding-left: 47px;
     line-height: 2rem; }
@@ -34,6 +34,7 @@ header {
 .hamburger {
   display: none;
   font-size: 40px;
+  margin-top: 10px;
   float: right;
   z-index: 300; }
 
@@ -47,9 +48,9 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  margin-top: 74px;
+  margin-top: 64px;
   z-index: 200;
-  border-top: solid 3px #7a8c88; }
+  text-align: center; }
   .drop-menu ul {
     padding: 5px 0 0; }
   .drop-menu li {

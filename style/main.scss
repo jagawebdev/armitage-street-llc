@@ -2,6 +2,7 @@
 @import "assets/_colors.scss";
 @import "assets/_navbar.scss";
 @import "assets/_form.scss";
+@import "assets/_table.scss";
 
 /* GLOBAL ============================================== */
 *, *:after, *:before {
@@ -37,10 +38,6 @@ a {
     }
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
 
 img {
     width:  100%;
@@ -66,20 +63,24 @@ img {
     padding-left: 30px;
 }
 
+.column-t-padding {
+    padding-top: 30px;
+}
+
 .clearfix {
     clear: both;
 }
 
 #templates-body {
     background-color: #FFF;
-    padding: 192px 35px 60px 270px;
+    padding: 182px 35px 60px 270px;
     min-height: 100vh;
 }
 
 .hero {
     position: relative;
     margin-bottom: 20px;
-    height: 202px;
+    height: 225px;
     background-size: cover;
 }
 
@@ -109,6 +110,7 @@ img {
     letter-spacing: .2rem;
     font-weight: bold;
     font-size: 36px;
+    line-height: 30px;
     width: 100%;
     color: #fff;
     margin: 0;
@@ -116,6 +118,21 @@ img {
     transform: translateY(-50%);
     left: 0;
     width: 100%;
+}
+
+.contact-page, .loan-page {
+    a {
+        color: black !important;
+        &:hover {
+            color: black;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        &:visited {
+            color: black;
+            text-decoration: none;
+        }
+    }
 }
 
 footer {
@@ -143,6 +160,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        position: fixed;    
+    }
+    
     #templates-body {
         padding: 100px 15px 60px;
     }
@@ -161,5 +182,11 @@ footer {
     
     .column-l-padding, .column-r-padding {
         padding-left: 0;
+    }
+    
+    footer {
+        a, span {
+            display: none;
+        }
     }
 }
