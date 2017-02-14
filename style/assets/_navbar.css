@@ -1,25 +1,37 @@
 /* HEADER ============================================== */
 header {
-  background-color: #FFF;
-  width: 250px;
-  padding: 35px 15px 35px 35px;
+  font-family: 'Arial Narrow', 'Trebuchet MS', Tahoma;
+  position: absolute;
+  min-height: 100%;
+  background-color: #869995;
+  width: 209px;
+  margin: 0 7px 0 7px;
   float: left;
   display: inline-block;
-  z-index: 10000; }
+  z-index: 10000;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 0rem;
+  z-index: 200; }
   header .logo {
+    background-color: #fff;
     display: inline-block;
-    margin: 0 0 16px 0; }
+    padding: 20px 40px 20px 20px; }
     header .logo img {
-      max-width: 200px; }
+      max-width: 150px; }
   header ul {
-    padding: 21px 0 21px 0;
+    border-top: #fff solid 5px;
+    padding: 5px 0;
     background-color: #869995;
-    list-style: none; }
+    list-style: none;
+    margin: 0; }
   header li {
-    padding-left: 47px;
-    line-height: 2rem; }
+    padding-left: 20px;
+    line-height: 1.5rem; }
     header li:hover {
       background-color: #7a8c88; }
+  header .dark-gree-bg {
+    background-color: #7a8c88; }
   header a {
     color: #fff; }
     header a:hover {
@@ -29,6 +41,9 @@ header {
     header a:visited {
       color: #fff;
       text-decoration: none; }
+
+.header-bg {
+  background-color: #fff; }
 
 /* NAVIGATION SECTION ================================= */
 .hamburger {
@@ -42,13 +57,13 @@ header {
   cursor: pointer; }
 
 .drop-menu {
-  font-size: 16px;
+  font-size: 14px;
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  margin-top: 64px;
+  margin-top: 75px;
   z-index: 200;
   text-align: center; }
   .drop-menu ul {
@@ -57,15 +72,24 @@ header {
     padding: 3px 0;
     border-bottom: solid 1px rgba(122, 140, 136, 0.5); }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 879px) {
+  .header-bg {
+    display: none; }
+
   header {
+    background-color: #fff;
+    position: fixed;
     width: 100%;
+    min-height: auto;
+    margin: 0;
     padding: 10px 15px;
     border-bottom: solid 1px black; }
     header .logo {
-      margin: 0 0 0 0; }
+      padding: 0 0 0 0; }
       header .logo img {
         max-width: 90px; }
+    header ul {
+      border-top: none; }
 
   .navigation {
     width: 100%; }

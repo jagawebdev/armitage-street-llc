@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="armitageTemplate">
+<head>
+	<meta charset="utf-8" http-equiv="Content-Type" content="text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+
+	<!--ICONS-->
+	<link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+	<title>Armitage Street LLC</title>
+	<link rel="shortcut icon" href="img/logo-only-house.png">
+
+	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!--custom css-->
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+
+<body class="container">
+	<!-- HEADER ====================================== -->
+		<header>
+	        <navbar class="navigation">
+	                <a href="index.html"><div class="logo"><img src="img/logo-sm.png"/></div></a>
+	                <img src="img/header-bg-2.jpg" class="header-bg"/>
+	
+	                <div class="navigation-list">
+	                    <ul>
+	                        <a href="index.html"><li>About Us</li></a>
+	                        <a href="loan.html"><li>Loan Origination</li></a>
+	                        <a href="note.html"><li>Note Purchases</li></a>
+	                        <a href="lender.html"><li>Lender Services</li></a>
+	                        <a href="contact.html"><li class="dark-green-bg">Contact Us</li></a>
+	                    </ul>
+	                </div><!-- .navigation-link-->
+	
+	                <a href="">
+	                    <div class="hamburger ion-android-menu ">
+	                        <div class="drop-menu text-center">
+	                            <ul class="drop-ul">
+	                                <a href="index.html" class="drop-link"><li>About Us</li></a>
+	                                <a href="loan.html" class="drop-link"><li>Loan Origination</li></a>
+	                                <a href="note.html" class="drop-link"><li>Note Purchases</li></a>
+	                                <a href="lender.html" class="drop-link"><li>Lender Services</li></a>
+	                                <a href="contact.html" class="drop-link"><li class="dark-green-bg">Contact Us</li></a>
+	                            </ul><!-- .drop-ul-->
+	                        </div><!-- .drop-menu-->
+	                   </div><!-- .hamburger-->
+	               </a><!-- drop down menu link-->
+	        </navbar><!-- .navigation-->
+	    </header>
+	    
+	    <section id="templates-body">
+	    	<div class="hero hero-contact"></div>
+            
+            <div class="left-column column-r-padding column-l-padding">
+                <h2 class="red-title">Contact Us</h2>
+            </div>
+            
+            <div class="right-column column-l-padding column-r-padding contact-form contact-page">
+                P: <a href="tel:(312) 899-6373">312.899.6373</a> <br/> 
+                <a href="mailto:info@armitagest.com">info@armitagest.com</a>
+                <br/><br/>
+            
+                <h3>Send Us a Message</h3> 
+                <div id ="contactform">
+                    <form class="form-horizontal contact-form" role="form">
+                		<div class="form-group">
+                			<div id="cname-group">
+                                <label>Your Name</label>                            
+                				<input type="text" name="inputName" id="inputName" class="form-control required">
+                			</div>
+                		</div>
+                		<div class="form-group">
+                			<div id="cemail-group">
+                                <label>Your Email</label>                            
+                				<input type="email" name="inputEmail" id="inputEmail" class="form-control required email">
+                			</div>
+                		</div>
+                		<div class="form-group">
+                			<div id="cphone-group">
+                                <label>Your Phone Number</label>
+                				<input type="phone" name="inputPhone" id="inputPhone" class="form-control number" pattern="[\-\(\)\s0-9]{8,15}" title="Please enter a valid phone number.">
+                			</div>
+                		</div>
+                		<div class="form-group">	
+                			<div>
+                                <label>Subject</label>
+                				<input type="text" name="inputSubject" id="inputSubject" class="form-control required">
+                			</div>
+                		</div>
+                		<div class="form-group">
+                			<div>
+                				<textarea name="inputMessage" id="inputMessage" rows="6" class="form-control required"></textarea>
+                			</div>
+                		</div>
+                		<div class="form-group">
+                			<div>
+                				<button type="submit">Submit</button>
+                			</div>
+                		</div>
+                	</form>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <!-- FOOTER ====================================== -->
+			<footer>
+			    <p><a href="contact.html">Contact Us</a> <span>|</span>&#xA9; Armitage Street LLC 2017. All Rights Reserved.</p>
+			</footer>
+	    </section>
+	    
+
+	<!-- THIRD PARTY JS-->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    
+	<!-- application scripts -->
+	<script src="js/main.js" type="text/javascript"></script>
+	<script src="js/contact.js"></script>
+</body>
+</html>
