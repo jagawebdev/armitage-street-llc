@@ -367,49 +367,46 @@ textarea {
 /* HEADER ============================================== */
 header {
   font-family: 'Arial Narrow', 'Trebuchet MS', Tahoma;
-  position: absolute;
-  min-height: 100%;
-  background-color: #869995;
-  width: 209px;
-  margin: 0 7px 0 7px;
-  float: left;
-  display: inline-block;
+  position: relative;
+  background-color: #fff;
   z-index: 10000;
   text-transform: uppercase;
-  font-size: 0.8rem;
-  line-height: 0rem;
-  z-index: 200; }
+  height: 112px;
+  padding: 0 7px; }
   header .logo {
-    background-color: #fff;
-    display: inline-block;
-    padding: 20px 40px 20px 20px; }
+    margin: 0 0 0 27px;
+    display: inline-block; }
     header .logo img {
-      max-width: 150px; }
+      background-color: white;
+      position: absolute;
+      max-width: 175px;
+      padding: 3px 15px 0; }
   header ul {
-    border-top: #fff solid 5px;
-    padding: 5px 0;
-    background-color: #869995;
+    margin: 32px 0;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    padding: 5px 0 3px;
     list-style: none;
-    margin: 0; }
+    text-align: right; }
+    header ul:last-child {
+      padding-right: 27px; }
   header li {
+    display: inline;
     padding-left: 20px;
     line-height: 1.5rem; }
-    header li:hover {
-      background-color: #7a8c88; }
-  header .dark-green-bg {
-    background-color: #7a8c88; }
   header a {
-    color: #fff; }
+    color: black; }
     header a:hover {
-      color: #fff;
+      color: black;
       cursor: pointer;
       text-decoration: none; }
     header a:visited {
-      color: #fff;
+      color: black;
       text-decoration: none; }
 
 .header-bg {
-  background-color: #fff; }
+  background-color: #fff;
+  display: none; }
 
 /* NAVIGATION SECTION ================================= */
 .hamburger {
@@ -589,7 +586,7 @@ img {
 
 .container {
   padding: 0;
-  max-width: 976px;
+  max-width: 876px;
   margin: auto; }
 
 .left-column {
@@ -623,7 +620,7 @@ img {
 
 #templates-body {
   background-color: #FFF;
-  padding: 115px 7px 60px 222px;
+  padding: 0 7px 60px 7px;
   min-height: 100vh; }
 
 .hero {
