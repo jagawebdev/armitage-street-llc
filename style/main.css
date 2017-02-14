@@ -369,7 +369,7 @@ header {
   font-family: 'Arial Narrow', 'Trebuchet MS', Tahoma;
   position: absolute;
   min-height: 100%;
-  background-color: #869995;
+  background-color: #5B8092;
   width: 209px;
   margin: 0 7px 0 7px;
   float: left;
@@ -388,16 +388,16 @@ header {
   header ul {
     border-top: #fff solid 5px;
     padding: 5px 0;
-    background-color: #869995;
+    background-color: #5B8092;
     list-style: none;
     margin: 0; }
   header li {
     padding-left: 20px;
     line-height: 1.5rem; }
     header li:hover {
-      background-color: #7a8c88; }
+      background-color: #335566; }
   header .dark-green-bg {
-    background-color: #7a8c88; }
+    background-color: #335566; }
   header a {
     color: #fff; }
     header a:hover {
@@ -471,15 +471,15 @@ header {
 
 button {
   position: relative;
-  border: solid 1px #7a8c88;
+  border: solid 1px #335566;
   padding: 5px 10px 3px 10px;
-  background-color: #869995;
+  background-color: #5B8092;
   overflow: hidden;
   color: white;
   margin-bottom: 3px; }
 
 button:hover {
-  color: #869995;
+  color: #5B8092;
   background-color: transparent; }
 
 button:focus {
@@ -614,7 +614,7 @@ img {
   clear: both; }
 
 .red-title {
-  color: #a95a4e;
+  color: #A32213;
   margin: 0;
   text-align: right;
   text-transform: uppercase;
@@ -666,13 +666,13 @@ footer {
   footer span {
     padding: 0 20px; }
   footer a {
-    color: #869995 !important; }
+    color: #5B8092 !important; }
     footer a:hover {
-      color: #7a8c88;
+      color: #335566;
       cursor: pointer;
       text-decoration: underline; }
     footer a:visited {
-      color: #869995;
+      color: #5B8092;
       text-decoration: none; }
 
 @media screen and (max-width: 879px) {
