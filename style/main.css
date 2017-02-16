@@ -474,20 +474,25 @@ header {
 .contact-form h3 {
   margin: 0 0 15px 0; }
 
-button {
+fieldset {
+  border: none;
+  padding: 0; }
+
+.submit-button {
   position: relative;
   border: solid 1px #7a8c88;
   padding: 5px 10px 3px 10px;
   background-color: #869995;
   overflow: hidden;
   color: white;
+  margin-top: 15px;
   margin-bottom: 3px; }
 
-button:hover {
+.submit-button:hover {
   color: #869995;
   background-color: transparent; }
 
-button:focus {
+.submit-button:focus {
   outline: 0; }
 
 label {
@@ -498,7 +503,7 @@ label {
 .form-group {
   margin-bottom: 10px; }
 
-.form-group textarea, .form-group input {
+.form-group textarea {
   background-color: transparent; }
 
 input[type="text"],
@@ -577,6 +582,9 @@ body {
 
 b, strong {
   -webkit-font-smoothing: antialiased; }
+
+#success, #error {
+  display: none; }
 
 a {
   text-decoration: none; }
@@ -662,12 +670,23 @@ img {
     color: #666;
     text-decoration: none; }
 
+.info {
+  padding-top: 15px;
+  font-size: 16px; }
+
+.ion-android-call, .ion-email {
+  font-size: 24px;
+  padding-right: 10px; }
+
 footer {
   background-color: white;
   text-align: center;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.7);
-  margin: 60px 0 30px; }
+  padding: 0 0 20px;
+  margin: 0 auto; }
+  footer p {
+    margin: 0; }
   footer span {
     padding: 0 20px; }
   footer a {
@@ -701,7 +720,10 @@ footer {
     padding-left: 0;
     padding-right: 0; }
 
-  footer a, footer span {
-    display: none; } }
+  footer span {
+    display: none; }
+  footer a {
+    display: block;
+    padding-bottom: 15px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -38,7 +38,7 @@ header {
       color: black;
       text-decoration: none; }
 
-/* NAVIGATION SECTION ================================= */
+/* SMALL VIEW DROP DOWN NAVIGATION SECTION ================================= */
 .hamburger {
   display: none;
   font-size: 40px;
@@ -94,7 +94,7 @@ header {
       header .logo img {
         position: relative;
         max-width: 100px;
-        padding: 3px 15px 0 5px; }
+        padding: 3px 15px 0 7px; }
 
   .navigation {
     width: 100%; }

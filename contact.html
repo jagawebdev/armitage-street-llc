@@ -61,62 +61,62 @@
             </div>
             
             <div class="right-column column-l-padding column-r-padding contact-form contact-page">
-                P: <a href="tel:(312) 899-6373">312.899.6373</a> <br/> 
-                <a href="mailto:info@armitagest.com">info@armitagest.com</a>
-                <br/><br/>
-            
-                <h3>Send Us a Message</h3> 
-                <div id ="contactform">
-                    <form class="form-horizontal contact-form" role="form">
-                		<div class="form-group">
-                			<div id="cname-group">
-                                <label>Your Name</label>                            
-                				<input type="text" name="inputName" id="inputName" class="form-control required">
-                			</div>
-                		</div>
-                		<div class="form-group">
-                			<div id="cemail-group">
-                                <label>Your Email</label>                            
-                				<input type="email" name="inputEmail" id="inputEmail" class="form-control required email">
-                			</div>
-                		</div>
-                		<div class="form-group">
-                			<div id="cphone-group">
-                                <label>Your Phone Number</label>
-                				<input type="phone" name="inputPhone" id="inputPhone" class="form-control number" pattern="[\-\(\)\s0-9]{8,15}" title="Please enter a valid phone number.">
-                			</div>
-                		</div>
-                		<div class="form-group">	
-                			<div>
-                                <label>Subject</label>
-                				<input type="text" name="inputSubject" id="inputSubject" class="form-control required">
-                			</div>
-                		</div>
-                		<div class="form-group">
-                			<div>
-                				<textarea name="inputMessage" id="inputMessage" rows="6" class="form-control required"></textarea>
-                			</div>
-                		</div>
-                		<div class="form-group">
-                			<div>
-                				<button type="submit">Submit</button>
-                			</div>
-                		</div>
-                	</form>
-                </div>
+            	
+            	<h3>Send Us a Message</h3>
+            	
+            	<form id="contact" name="contact" method="post">  
+				  <fieldset>  
+				  
+				  <div class="form-group">
+				    <label for="name" id="name">Name<span class="required">*</span></label>
+				    <input type="text" name="name" id="name" size="30" value="" required/>
+				  </div>
+				  
+				  <div class="form-group">
+				    <label for="email" id="email">Email<span class="required">*</span></label>
+				    <input type="text" name="email" id="email" size="30" value="" required/>
+				  </div>
+				  
+				  <div class="form-group">
+				    <label for="phone" id="phone">Phone</label>
+				    <input type="text" name="phone" id="phone" size="30" value="" />
+				  </div>
+				  
+				  <div class="form-group">
+				    <label for="Message" id="message">Message<span class="required">*</span></label>
+				    <textarea name="message" id="message" required></textarea>
+				  </div>
+				  
+				    <input id="submit" type="submit" name="submit" value="Send" class="submit-button" />  
+				  </fieldset>  
+				</form>
+				
+				<div id="success">
+				  <span>
+				    <p>Your message was sent succssfully!</p>
+				  </span>
+				</div>
+				
+				<div id="error">
+				  <span>
+				    <p>Something went wrong, try refreshing and submitting the form again.</p>
+				  </span>
+				</div>
+
             </div>
             <div class="clearfix"></div>
-
-            <!-- FOOTER ====================================== -->
+	    </section>
+	    
+	    <!-- FOOTER ====================================== -->
 			<footer>
 			    <p><a href="contact.html">Contact Us</a> <span>|</span>&#xA9; Armitage Street LLC 2017. All Rights Reserved.</p>
 			</footer>
-	    </section>
-	    
 
 	<!-- THIRD PARTY JS-->
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+
 	<!-- application scripts -->
 	<script src="js/main.js" type="text/javascript"></script>
 	<script src="js/contact.js"></script>
