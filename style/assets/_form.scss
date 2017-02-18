@@ -4,21 +4,27 @@
     }
 }
 
-button {
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.submit-button {
   position: relative;
   border: solid 1px $dark-green;
   padding: 5px 10px 3px 10px;
   background-color: $green;
   overflow: hidden;
   color: white;
+  margin-top: 15px;
   margin-bottom: 3px;
 }
-button:hover {
+.submit-button:hover {
   color: $green;
   background-color: transparent;
 }
 
-button:focus {
+.submit-button:focus {
   outline: 0;
 }
 
@@ -32,7 +38,7 @@ label {
     margin-bottom: 10px;
 }
 
-.form-group textarea, .form-group input {
+.form-group textarea {
   background-color: transparent;
 }
 

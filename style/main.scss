@@ -26,6 +26,10 @@ b, strong {
   -webkit-font-smoothing: antialiased;
 }
 
+#success, #error {
+    display:none
+}
+
 a {
     text-decoration: none;
     &:hover {
@@ -48,7 +52,7 @@ img {
 
 .container {
     padding: 0;
-    max-width: 976px;
+    max-width: 876px;
     margin: auto;
 }
 
@@ -89,7 +93,7 @@ img {
 
 #templates-body {
     background-color: #FFF;
-    padding: 115px 7px 60px 222px;
+    padding: 0 7px 60px 7px;
     min-height: 100vh;
 }
 
@@ -135,12 +139,26 @@ img {
     }
 }
 
+.info {
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+.ion-android-call, .ion-email {
+    font-size: 24px;
+    padding-right: 10px;
+}
+
 footer {
     background-color: white;
     text-align: center;
     font-size: 12px;
     color: rgba(0,0,0,0.7);
-    margin: 60px 0 30px;
+    padding: 0 0 20px;
+    margin: 0 auto;
+    p {
+        margin: 0;
+    }
     span {
         padding: 0 20px;
     }
@@ -159,9 +177,9 @@ footer {
     }
 }
 
-@media screen and (max-width: 879px) {
+@media screen and (max-width: 795px) {
     #templates-body {
-        padding: 100px 15px 60px;
+        padding: 80px 15px 60px;
     }
     
     .left-column, .right-column {
@@ -187,8 +205,13 @@ footer {
     }
     
     footer {
-        a, span {
+        span {
             display: none;
+        }
+        
+        a {
+            display: block;
+            padding-bottom: 15px;
         }
     }
 }

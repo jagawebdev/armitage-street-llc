@@ -367,6 +367,7 @@ textarea {
 /* HEADER ============================================== */
 header {
   font-family: 'Arial Narrow', 'Trebuchet MS', Tahoma;
+<<<<<<< HEAD
   position: absolute;
   min-height: 100%;
   background-color: #5B8092;
@@ -374,48 +375,64 @@ header {
   margin: 0 7px 0 7px;
   float: left;
   display: inline-block;
+=======
+  position: relative;
+  background-color: #fff;
+>>>>>>> header-version-3
   z-index: 10000;
   text-transform: uppercase;
-  font-size: 0.8rem;
-  line-height: 0rem;
-  z-index: 200; }
+  height: 112px;
+  padding: 0 7px; }
   header .logo {
-    background-color: #fff;
-    display: inline-block;
-    padding: 20px 40px 20px 20px; }
+    margin: 0 0 0 27px;
+    display: inline-block; }
     header .logo img {
-      max-width: 150px; }
+      background-color: white;
+      position: absolute;
+      max-width: 175px;
+      padding: 3px 15px 0; }
   header ul {
+<<<<<<< HEAD
     border-top: #fff solid 5px;
     padding: 5px 0;
     background-color: #5B8092;
+=======
+    margin: 32px 0;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    padding: 5px 0 3px;
+>>>>>>> header-version-3
     list-style: none;
-    margin: 0; }
+    text-align: right; }
+    header ul:last-child {
+      padding-right: 27px; }
   header li {
+    display: inline;
     padding-left: 20px;
     line-height: 1.5rem; }
+<<<<<<< HEAD
     header li:hover {
       background-color: #335566; }
   header .dark-green-bg {
     background-color: #335566; }
+=======
+>>>>>>> header-version-3
   header a {
-    color: #fff; }
+    color: black; }
     header a:hover {
-      color: #fff;
+      color: black;
       cursor: pointer;
       text-decoration: none; }
     header a:visited {
-      color: #fff;
+      color: black;
       text-decoration: none; }
 
-.header-bg {
-  background-color: #fff; }
-
-/* NAVIGATION SECTION ================================= */
+/* SMALL VIEW DROP DOWN NAVIGATION SECTION ================================= */
 .hamburger {
   display: none;
   font-size: 40px;
   margin-top: 10px;
+  margin-right: 10px;
   float: right;
   z-index: 300; }
 
@@ -423,39 +440,50 @@ header {
   cursor: pointer; }
 
 .drop-menu {
+  background-color: #869995;
   font-size: 14px;
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  margin-top: 75px;
+  margin-top: 65px;
   z-index: 200;
   text-align: center; }
   .drop-menu ul {
-    padding: 5px 0 0; }
+    padding: 5px 0 0;
+    border: none;
+    text-align: center;
+    margin: 0 0; }
+    .drop-menu ul:last-child {
+      padding-right: 0; }
   .drop-menu li {
     padding: 3px 0;
-    border-bottom: solid 1px rgba(122, 140, 136, 0.5); }
+    border-bottom: solid 1px rgba(122, 140, 136, 0.5);
+    display: block; }
+  .drop-menu a {
+    color: #fff; }
+    .drop-menu a:hover {
+      color: #fff; }
+    .drop-menu a:visited {
+      color: #fff; }
 
-@media screen and (max-width: 879px) {
-  .header-bg {
-    display: none; }
+.dark-green-bg {
+  background-color: #7a8c88; }
 
+@media screen and (max-width: 795px) {
   header {
-    background-color: #fff;
     position: fixed;
+    height: 65px;
     width: 100%;
-    min-height: auto;
-    margin: 0;
-    padding: 10px 15px;
-    border-bottom: solid 1px black; }
+    border-bottom: 1px solid black; }
     header .logo {
-      padding: 0 0 0 0; }
+      margin: 7px 0 0 0;
+      display: inline-block; }
       header .logo img {
-        max-width: 90px; }
-    header ul {
-      border-top: none; }
+        position: relative;
+        max-width: 100px;
+        padding: 3px 15px 0 7px; }
 
   .navigation {
     width: 100%; }
@@ -469,20 +497,30 @@ header {
 .contact-form h3 {
   margin: 0 0 15px 0; }
 
-button {
+fieldset {
+  border: none;
+  padding: 0; }
+
+.submit-button {
   position: relative;
   border: solid 1px #335566;
   padding: 5px 10px 3px 10px;
   background-color: #5B8092;
   overflow: hidden;
   color: white;
+  margin-top: 15px;
   margin-bottom: 3px; }
 
+<<<<<<< HEAD
 button:hover {
   color: #5B8092;
+=======
+.submit-button:hover {
+  color: #869995;
+>>>>>>> header-version-3
   background-color: transparent; }
 
-button:focus {
+.submit-button:focus {
   outline: 0; }
 
 label {
@@ -493,7 +531,7 @@ label {
 .form-group {
   margin-bottom: 10px; }
 
-.form-group textarea, .form-group input {
+.form-group textarea {
   background-color: transparent; }
 
 input[type="text"],
@@ -573,6 +611,9 @@ body {
 b, strong {
   -webkit-font-smoothing: antialiased; }
 
+#success, #error {
+  display: none; }
+
 a {
   text-decoration: none; }
   a:hover {
@@ -589,7 +630,7 @@ img {
 
 .container {
   padding: 0;
-  max-width: 976px;
+  max-width: 876px;
   margin: auto; }
 
 .left-column {
@@ -623,7 +664,7 @@ img {
 
 #templates-body {
   background-color: #FFF;
-  padding: 115px 7px 60px 222px;
+  padding: 0 7px 60px 7px;
   min-height: 100vh; }
 
 .hero {
@@ -657,12 +698,23 @@ img {
     color: #666;
     text-decoration: none; }
 
+.info {
+  padding-top: 15px;
+  font-size: 16px; }
+
+.ion-android-call, .ion-email {
+  font-size: 24px;
+  padding-right: 10px; }
+
 footer {
   background-color: white;
   text-align: center;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.7);
-  margin: 60px 0 30px; }
+  padding: 0 0 20px;
+  margin: 0 auto; }
+  footer p {
+    margin: 0; }
   footer span {
     padding: 0 20px; }
   footer a {
@@ -675,9 +727,9 @@ footer {
       color: #5B8092;
       text-decoration: none; }
 
-@media screen and (max-width: 879px) {
+@media screen and (max-width: 795px) {
   #templates-body {
-    padding: 100px 15px 60px; }
+    padding: 80px 15px 60px; }
 
   .left-column, .right-column {
     width: 100%; }
@@ -696,7 +748,10 @@ footer {
     padding-left: 0;
     padding-right: 0; }
 
-  footer a, footer span {
-    display: none; } }
+  footer span {
+    display: none; }
+  footer a {
+    display: block;
+    padding-bottom: 15px; } }
 
 /*# sourceMappingURL=main.css.map */
