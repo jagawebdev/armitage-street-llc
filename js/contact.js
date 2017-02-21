@@ -31,7 +31,7 @@ $(function() {
             $(form).ajaxSubmit({
                 type:"POST",
                 data: $(form).serialize(),
-                url:"contact.php",
+                url:"js/contact.php",
                 success: function() {
                     $('#contact :input').attr('disabled', 'disabled');
                     $('#contact').fadeTo( "slow", 0.15, function() {
