@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$dark-green".
-        on line 14 of /home/ubuntu/workspace/style/assets/_form.scss
+        on line 15 of /home/ubuntu/workspace/style/assets/_form.scss
 
-9:   padding: 0;
-10: }
-11: 
-12: .submit-button {
-13:   position: relative;
-14:   border: solid 1px $dark-green;
-15:   padding: 5px 10px 3px 10px;
-16:   background-color: $green;
-17:   overflow: hidden;
-18:   color: white;
-19:   margin-top: 15px;
+10:   padding: 0;
+11: }
+12: 
+13: .submit-button {
+14:   position: relative;
+15:   border: solid 1px $dark-green;
+16:   padding: 5px 10px 3px 10px;
+17:   background-color: $green;
+18:   overflow: hidden;
+19:   color: white;
+20:   margin-top: 15px;
 
 Backtrace:
-/home/ubuntu/workspace/style/assets/_form.scss:14
+/home/ubuntu/workspace/style/assets/_form.scss:15
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
@@ -69,4 +69,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark-green\".\A         on line 14 of /home/ubuntu/workspace/style/assets/_form.scss\A \A 9:   padding: 0;\A 10: }\A 11: \A 12: .submit-button {\A 13:   position: relative;\A 14:   border: solid 1px $dark-green;\A 15:   padding: 5px 10px 3px 10px;\A 16:   background-color: $green;\A 17:   overflow: hidden;\A 18:   color: white;\A 19:   margin-top: 15px;"; }
+  content: "Error: Undefined variable: \"$dark-green\".\A         on line 15 of /home/ubuntu/workspace/style/assets/_form.scss\A \A 10:   padding: 0;\A 11: }\A 12: \A 13: .submit-button {\A 14:   position: relative;\A 15:   border: solid 1px $dark-green;\A 16:   padding: 5px 10px 3px 10px;\A 17:   background-color: $green;\A 18:   overflow: hidden;\A 19:   color: white;\A 20:   margin-top: 15px;"; }

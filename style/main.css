@@ -471,6 +471,7 @@ header {
   .hamburger {
     display: inline-block;
     z-index: 300; } }
+/*FORM ============================================== */
 .contact-form h3 {
   margin: 0 0 15px 0; }
 
@@ -550,6 +551,7 @@ textarea:focus {
 .form-control:focus {
   border: solid 1px gray; }
 
+/*TABLE ============================================== */
 table {
   margin-top: 25px; }
 
@@ -600,11 +602,13 @@ img {
   width: 100%;
   height: auto; }
 
+/*CONTAINER ============================================== */
 .container {
   padding: 0;
   max-width: 876px;
   margin: auto; }
 
+/*LEFT RIGHT COLUMNS ============================================== */
 .left-column {
   width: 30%;
   float: left; }
@@ -626,6 +630,7 @@ img {
 .clearfix {
   clear: both; }
 
+/*MAIN TED TITLES ============================================== */
 .red-title {
   color: #a95a4e;
   margin: 0;
@@ -639,6 +644,7 @@ img {
   padding: 0 7px 60px 7px;
   min-height: 100vh; }
 
+/*HERO MAIN PICTURES ============================================== */
 .hero {
   position: relative;
   margin-bottom: 20px;
@@ -660,13 +666,14 @@ img {
 .hero-contact {
   background: url("../img/hero-bg-3.jpg") no-repeat center; }
 
-.contact-page a, .loan-page a {
+/*CONTACT PAGE ============================================== */
+.contact-page a {
   color: #666 !important; }
-  .contact-page a:hover, .loan-page a:hover {
+  .contact-page a:hover {
     color: #666;
     cursor: pointer;
     text-decoration: underline; }
-  .contact-page a:visited, .loan-page a:visited {
+  .contact-page a:visited {
     color: #666;
     text-decoration: none; }
 
@@ -674,10 +681,28 @@ img {
   padding-top: 15px;
   font-size: 16px; }
 
-.ion-android-call, .ion-email {
-  font-size: 24px;
-  padding-right: 10px; }
+/*LOAN PAGE BUTTON ============================================== */
+.project-button {
+  position: relative;
+  border: solid 1px #7a8c88;
+  padding: 5px 20px;
+  background-color: #869995;
+  overflow: hidden;
+  color: white;
+  margin-top: 15px; }
+  .project-button:hover {
+    color: #869995 !important;
+    background-color: transparent; }
+  .project-button:focus {
+    outline: 0; }
+  .project-button a {
+    color: white !important;
+    text-decoration: none; }
+    .project-button a:hover {
+      color: #869995 !important;
+      text-decoration: none; }
 
+/*FOOTER ============================================== */
 footer {
   background-color: white;
   text-align: center;
