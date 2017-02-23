@@ -91,7 +91,13 @@
 				  <!--Borrower-name------------- -->
 				  <div class="form-group">
 				    <label for="borrower-name" id="borrower-name">Borrower Name<span class="required">*</span></label>
-				    <!--<textarea name="borrower-name" id="borrower-name" required></textarea>-->
+				 <!--   <select class="form-control" name="borrower-name" id="borrower-name" required>-->
+					<!--	<option value="Entity" selected>Entity</option>-->
+					<!--	<option value="Individual">Individual</option>-->
+					<!--</select>-->
+					
+					<input type="radio" name="borrower-name" value="Entity" checked/> Entity<br/>
+					<input type="radio" name="borrower-name" value="Individual" /> Individual
 				  </div>
 				  
 				  <!--Entity-type------------- -->
@@ -138,13 +144,17 @@
 				  
 				  <!--property-type------------- -->
 				  <div class="form-group">
-				    <label for="property-type" id="property-type">Property Type</label>
-				    <!--<textarea name="property-type" id="property-type"></textarea>-->
+				    <label for="property-type" id="property-type">Property Type<span class="required">*</span></label>
+				    <select class="form-control" name="property-type" id="property-type" required>
+						<option value="SingleFamily" selected>Single Family</option>
+						<option value="Two-Four-Unit">2-4 Unit</option>
+						<option value="Five-plus-Unit">5+ Unit</option>
+					</select>
 				  </div>
 				  
 				  <!--purchase-price------------- -->
 				  <div class="form-group">
-				    <label for="purchase-price" id="purchase-price">Purchase Price</label>
+				    <label for="purchase-price" id="purchase-price">Purchase Price<span class="required">*</span></label>
 				    <input type="text" name="purchase-price" id="purchase-price" size="30" value="" required/>
 				  </div>
 				  
@@ -168,8 +178,13 @@
 				  
 				  <!--type-of-loan------------- -->
 				  <div class="form-group">
-				    <label for="type-of-loan" id="type-of-loan">Type of Loan</label>
-				    <!--<input type="text" name="type-of-loan" id="type-of-loan" size="30" value=""/>-->
+				    <label for="type-of-loan" id="type-of-loan">Type of Loan<span class="required">*</span></label>
+				    <select class="form-control" name="type-of-loan" id="type-of-loan" required>
+						<option value="Acquisition" selected>Acquisition</option>
+						<option value="Renovation">Renovation</option>
+						<option value="Refinance">Refinance</option>
+						<option value="Acquisition-plus-Renovation">Acquisition + Renovation</option>
+					</select>
 				  </div>
 				  
 				  <!--Notes------------- -->
