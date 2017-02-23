@@ -5,6 +5,10 @@
     }
 }
 
+.error {
+  color: #a95a4e;
+}
+
 fieldset {
   border: none;
   padding: 0;
@@ -85,6 +89,7 @@ textarea:focus {
   -moz-box-shadow: none !important;
   box-shadow: none !important;
   background-color: transparent;
+  color: #666;
 }
 .form-control:focus {
   border: solid 1px gray;

@@ -475,6 +475,9 @@ header {
 .contact-form h3 {
   margin: 0 0 15px 0; }
 
+.error {
+  color: #a95a4e; }
+
 fieldset {
   border: none;
   padding: 0; }
@@ -536,7 +539,7 @@ input[type="search"]:focus,
 textarea:focus {
   border: solid 1px gray; }
 
-select {
+.form-control {
   border: gray 1px solid;
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
@@ -547,7 +550,8 @@ select {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
-  background-color: transparent; }
+  background-color: transparent;
+  color: #666; }
 
 .form-control:focus {
   border: solid 1px gray; }
@@ -666,6 +670,9 @@ img {
 
 .hero-contact {
   background: url("../img/hero-bg-3.jpg") no-repeat center; }
+
+.hero-project {
+  background: url("../img/project-bg.jpg") no-repeat center; }
 
 /*CONTACT PAGE ============================================== */
 .contact-page a {

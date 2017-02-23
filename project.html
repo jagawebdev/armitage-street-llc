@@ -55,14 +55,14 @@
 	    </header>
 	    
 	    <section id="templates-body">
-	    	<div class="hero hero-loan"></div>
+	    	<div class="hero hero-project"></div>
 	    	
 	    	<div class="left-column column-r-padding column-l-padding">
                 <h2 class="red-title">Project Submition</h2>
             </div>
             
             <div class="right-column column-l-padding column-r-padding contact-form contact-page">
-                <form id="contact" name="contact" method="get">  
+                <form id="project" name="project" method="get">  
 				  <fieldset>  
 				  <!--name------------- -->
 				  <div class="form-group">
@@ -85,17 +85,12 @@
 				  <!--hear-about-us------------- -->
 				  <div class="form-group">
 				    <label for="how-did-you-hear-about-us" id="hear-about-us">How did you hear about us?</label>
-				    <input type="text" name="hear-about-us" id="hear-about-us" size="30" value="" required/>
+				    <input type="text" name="hear-about-us" id="hear-about-us" size="30" value=""/>
 				  </div>
 				  
 				  <!--Borrower-name------------- -->
 				  <div class="form-group">
-				    <label for="borrower-name" id="borrower-name">Borrower Name<span class="required">*</span></label>
-				 <!--   <select class="form-control" name="borrower-name" id="borrower-name" required>-->
-					<!--	<option value="Entity" selected>Entity</option>-->
-					<!--	<option value="Individual">Individual</option>-->
-					<!--</select>-->
-					
+				    <label for="borrower-name" id="borrowerName">Borrower Name<span class="required">*</span></label>
 					<input type="radio" name="borrower-name" value="Entity" checked/> Entity<br/>
 					<input type="radio" name="borrower-name" value="Individual" /> Individual
 				  </div>
@@ -144,7 +139,7 @@
 				  
 				  <!--property-type------------- -->
 				  <div class="form-group">
-				    <label for="property-type" id="property-type">Property Type<span class="required">*</span></label>
+				    <label for="property-type" id="propertyType">Property Type<span class="required">*</span></label>
 				    <select class="form-control" name="property-type" id="property-type" required>
 						<option value="SingleFamily" selected>Single Family</option>
 						<option value="Two-Four-Unit">2-4 Unit</option>
@@ -154,14 +149,8 @@
 				  
 				  <!--purchase-price------------- -->
 				  <div class="form-group">
-				    <label for="purchase-price" id="purchase-price">Purchase Price<span class="required">*</span></label>
+				    <label for="purchase-price" id="purchasePrice">Purchase Price<span class="required">*</span></label>
 				    <input type="text" name="purchase-price" id="purchase-price" size="30" value="" required/>
-				  </div>
-				  
-				  <!--estimated-renovation-budget------------- -->
-				  <div class="form-group">
-				    <label for="estimated-renovation-budget" id="estimated-renovation-budget">Estimated Renovation Budget</label>
-				    <input type="text" name="estimated-renovation-budget" id="estimated-renovation-budget" size="30" value=""/>
 				  </div>
 				  
 				  <!--estimated-renovation-budget------------- -->
@@ -178,7 +167,7 @@
 				  
 				  <!--type-of-loan------------- -->
 				  <div class="form-group">
-				    <label for="type-of-loan" id="type-of-loan">Type of Loan<span class="required">*</span></label>
+				    <label for="type-of-loan" id="typeOfLoan">Type of Loan<span class="required">*</span></label>
 				    <select class="form-control" name="type-of-loan" id="type-of-loan" required>
 						<option value="Acquisition" selected>Acquisition</option>
 						<option value="Renovation">Renovation</option>
@@ -199,7 +188,7 @@
 				
 				<div id="success">
 				  <span>
-				    <p>Your message was sent succssfully!</p>
+				    <p>Your Project Submition was sent succssfully!</p>
 				  </span>
 				</div>
 				
@@ -221,7 +210,9 @@
 
 	<!-- THIRD PARTY JS-->
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+
 	<!-- application scripts -->
 	<script src="js/main.js" type="text/javascript"></script>
 	<script src="js/project.js"></script>
